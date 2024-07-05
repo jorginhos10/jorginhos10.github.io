@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Jorge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilos adicionales para el ejemplo */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow: auto;
+        }
+
+        .popup-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PORTAFOLIO JORGE ALBEIRO VALENCIA</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#internal-projects">Proyectos Internos</a></li>
+                <li><a href="#external-projects">Proyectos Externos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Jorge, un apasionado desarrollador frontend en la recta final de mi carrera en ingeniería de sistemas. Con más de dos años y medio de experiencia trabajando con DEXT en el emocionante proyecto de Muebles Jamar, he tenido el privilegio de explorar diversos escenarios, desde el sector educativo hasta sistemas de ventas digitales, con un enfoque particular en el comercio electrónico. Me apasiona crear experiencias web atractivas y funcionales que impacten positivamente en los usuarios. Estoy constantemente aprendiendo y buscando nuevas formas de mejorar mis habilidades para ofrecer soluciones innovadoras.</p>
+    </section>
+    
+    <section id="internal-projects">
+        <h2>Proyectos Internos con Muebles Jamar</h2>
+        <div class="project">
+            <h3>Secciones Para Landing</h3>
+            <div class="container-data-proyecto">
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto0/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto0/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">FILTROS TAMAÑO COLCHON</div>
+              </div>
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto12/banner.png', ' ', 'popup1')">
+                <img src="proyectos/proyecto12/banner.png" alt="Imagen de ejemplo 1">
+                <div class="image-name">BANNER CUENTA REGRESIVA</div>
+            </div>
+                <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto1/banner.jpg', ' ', 'popup1')">
+                    <img src="proyectos/proyecto1/banner.jpg" alt="Imagen de ejemplo 1">
+                    <div class="image-name">BANNER MULTIMEDIA</div>
+                </div>
+        
+                <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto2/banner.jpg', ' ', 'popup1')">
+                  <img src="proyectos/proyecto2/banner.jpg" alt="Imagen de ejemplo 1">
+                  <div class="image-name">FILTROS DE MOSAICO PRODUCTOS</div>
+              </div>
+
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto3/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto3/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CONSUMOS DE SERVICIOS EN MOSAICO</div>
+            </div>
+
+            <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto4/banner.jpg', ' ', 'popup1')">
+              <img src="proyectos/proyecto4/banner.jpg" alt="Imagen de ejemplo 1">
+              <div class="image-name">CONSUMOS DE SERVICIOS EN MOSAICO</div>
+          </div>
+          <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto13/banner.jpg', ' ', 'popup1')">
+            <img src="proyectos/proyecto13/banner.jpg" alt="Imagen de ejemplo 1">
+            <div class="image-name">MINI MOSAICO CON TARJETA SLIDER</div>
+        </div>
+          <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto5/banner.jpg', ' ', 'popup1')">
+            <img src="proyectos/proyecto5/banner.jpg" alt="Imagen de ejemplo 1">
+            <div class="image-name">GRID DE CATEGORIA</div>
+        </div>
+
+        <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto6/banner.jpg', ' ', 'popup1')">
+          <img src="proyectos/proyecto6/banner.jpg" alt="Imagen de ejemplo 1">
+          <div class="image-name">SECCION ENTRADA DESDE BLOG</div>
+      </div>
+
+      <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto7/banner.jpg', ' ', 'popup1')">
+        <img src="proyectos/proyecto7/banner.jpg" alt="Imagen de ejemplo 1">
+        <div class="image-name">POP UP NATIVO SHOPIFY ADMINISTRABLE</div>
+    </div>
+
+    <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto8/banner.jpg', ' ', 'popup1')">
+      <img src="proyectos/proyecto8/banner.jpg" alt="Imagen de ejemplo 1">
+      <div class="image-name">REESTRUCTURACION DE HEADER</div>
+  </div>
+
+  <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto9/banner.jpg', ' ', 'popup1')">
+    <img src="proyectos/proyecto9/banner.jpg" alt="Imagen de ejemplo 1">
+    <div class="image-name">CINTRA RELOJ REVERSA</div>
+</div>
+
+<div class="image-container-proyect" onclick="openPopup('proyectos/proyecto10/banner.jpg', ' ', 'popup1')">
+  <img src="proyectos/proyecto10/banner.jpg" alt="Imagen de ejemplo 1">
+  <div class="image-name">BARRA DE CONTACTOS HOME</div>
+</div>
+ 
+
+<div class="image-container-proyect" onclick="openPopup('proyectos/proyecto11/banner.jpg', ' ', 'popup1')">
+  <img src="proyectos/proyecto11/banner.jpg" alt="Imagen de ejemplo 1">
+  <div class="image-name">SECCION CREDIJAMAR</div>
+</div>
+
+<div class="image-container-proyect" onclick="openPopup('proyectos/proyecto14/banner.jpg', ' ', 'popup1')">
+  <img src="proyectos/proyecto14/banner.jpg" alt="Imagen de ejemplo 1">
+  <div class="image-name">SECCION DE GARANTIAS CON POP UP VIDEO</div>
+</div>
+
+ 
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Landing y desarrollos</h3>
+            <div class="container-data-proyecto">
+
+
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto15/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto15/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">LANDING COLECCION ALMA</div>
+              </div>
+               
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto16/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto16/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">SECCION CREDIJAMAR</div>
+              </div>
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto17/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto17/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">JOURNY CLIENTE ORO VITALICIO</div>
+              </div>
+
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto18/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto18/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">LANDING COLECCION COLCHONES</div>
+              </div>
+               
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto19/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto19/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">LANDING PAUTAS WHATSAPP</div>
+              </div>
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto20/banner.png', ' ', 'popup1')">
+                <img src="proyectos/proyecto20/banner.png" alt="Imagen de ejemplo 1">
+                <div class="image-name">LANDING PAGA Y GANA</div>
+              </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="external-projects">
+        <h2>Proyectos Externos</h2>
+        <div class="project">
+            <h3>Proyecto Externo 1</h3>
+            <p>COLEGIO SAGRADA SABIDURIA</p>
+            <div class="container-data-proyecto">
+
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto22/1/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto22/1/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">COLEGIO SAGRADA SABIDURIA</div>
+              </div>
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/2/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/2/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">COLEGIO SAGRADA SABIDURIA</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/3/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/3/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">COLEGIO SAGRADA SABIDURIA</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/4/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/4/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">COLEGIO SAGRADA SABIDURIA</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/5/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/5/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">COLEGIO SAGRADA SABIDURIA</div>
+              </div>
+
+
+
+            </div>
+        </div>
+        <div class="project">
+            <h3>Proyecto Externo 2</h3>
+            <p>CCENGS RECYCLE AUSTRALIA.</p>
+
+            <div class="container-data-proyecto">
+
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto22/1/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto22/1/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CCENGS</div>
+              </div>
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/2/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/2/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CCENGS</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/3/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/3/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CCENGS</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/4/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/4/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CCENGS</div>
+              </div>
+
+
+              
+              <div class="image-container-proyect" onclick="openPopup('proyectos/proyecto21/5/banner.jpg', ' ', 'popup1')">
+                <img src="proyectos/proyecto21/5/banner.jpg" alt="Imagen de ejemplo 1">
+                <div class="image-name">CCENGS</div>
+              </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo electrónico: <a href="jorge.albeiro@hotmail.com">jorge.albeiro@hotmail.com</a></p>
+
+    </section>
+
+    <!-- Popups -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+            <img id="popup-img1" src="" alt="Imagen en Popup">
+            <div id="popup-caption1">hola</div>
+        </div>
+    </div>
+  
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+            <img id="popup-img2" src="" alt="Imagen en Popup">
+            <div id="popup-caption2"></div>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+            <img id="popup-img3" src="" alt="Imagen en Popup">
+            <div id="popup-caption3"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript para controlar los popups -->
+    <script>
+        function openPopup(imageSrc, caption, popupId) {
+            var popup = document.getElementById(popupId);
+            var popupImg = popup.querySelector('img');
+            var popupCaption = popup.querySelector('.popup-content > div');
+
+            popup.style.display = 'block';
+            popupImg.src = imageSrc;
+            popupCaption.textContent = caption;
+        }
+
+        function closePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'none';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Jorge</p>
+    </footer>
+</body>
+</html>
